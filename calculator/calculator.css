@@ -2,7 +2,6 @@
     display: flex;
     justify-content: center
 }
-
 .containerOfCalculator {
     display: flex;
     justify-content: space-evenly;
