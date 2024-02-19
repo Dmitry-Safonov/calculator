@@ -1,10 +1,16 @@
-.calculator {
+.mainContainer {
+    display: flex;
+    justify-content: center
+}
+
+.containerOfCalculator {
+    display: flex;
+    justify-content: space-evenly;
+    flex-direction: column;
+    align-content: space-between;
+    text-align: center;
     width: 375px;
     height: 667px;
-    position: absolute;
-    top: 50%;
-    left: 50%;
-    transform: translate(-50%, -50%);
     background: linear-gradient(153.43deg, #FFC200 16.67%, #FF9000 53.14%, #FF006A 100%);
     box-shadow: 0px 30px 40px 0px #00000032
 }
@@ -21,57 +27,50 @@
 }
 
 .letterBoxText {
-    position: absolute;
     width: 90px;
     height: 54px;
-    top: 18px;
 }
 
-.letterBoxTextC {
-    position: absolute;
-    width: 90px;
-    height: 54px;
-    top: 18px;
-}
-
-#numerCBox {
-    position: absolute;
-    width: 90px;
-    height: 90px;
-    top: 202px;
-    left: 3px;
-    background: #FFFFFF33
-}
-
-#multiplyBox {
-    position: absolute;
-    width: 90px;
-    height: 90px;
-    top: 295px;
-    left: 282px;
-    background: #FFFFFF33
-}
-
-.letterMultiply {
-    position: absolute;
-    width: 26px;
-    height: 26px;
-    top: 26.62px;
-    left: 45px;
-    range: -45deg
+.lowerСontainerOfCalculator {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: space-evenly;
+    align-items: center;
+    width: 375px;
+    height: 96px;
+    order: 3
 }
 
 #numer0Box {
-    position: absolute;
     width: 183px;
     height: 90px;
-    top: 574px;
-    left: 3px;
     background: #FFFFFF33
 }
 
+#znakZPTBox {
+    width: 90px;
+    height: 90px;
+    background: #FFFFFF33
+}
+
+.letterznakZPT {
+    width: 90px;
+    height: 54px;
+}
+
+#znakRavnoBox {
+    width: 90px;
+    height: 90px;
+    background: #FFFFFF33
+}
+
+.letterznakRavno {
+    width: 26px;
+    height: 12px;
+}
+
 .letterOfCalculatorText0 {
-    position: absolute;
     padding-left: 38px;
     font-size: 40px;
     font-weight: 400;
@@ -84,94 +83,225 @@
     color: #FFFFFF
 }
 
-#numer1Box {
-    position: absolute;
+.mediumConteinerOfCalculator {
+    display: flex;
+    height: 375px;
+    width: 375px;
+    flex-wrap: wrap;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    order: 2
+}
+
+#numerCBox {
     width: 90px;
     height: 90px;
-    top: 481px;
-    left: 3px;
     background: #FFFFFF33
+}
+
+.orderC {
+    order: 1
+}
+
+#multiplyBox {
+    width: 90px;
+    height: 90px;
+    background: #FFFFFF33
+}
+
+.orderMultiply {
+    order: 8
+}
+
+.letterMultiply {
+    width: 26px;
+    height: 26px;
+    range: -45deg
+}
+
+#numer1Box {
+    width: 90px;
+    height: 90px;
+    background: #FFFFFF33
+}
+
+.orderOne {
+    order: 13
 }
 
 #numer2Box {
-    position: absolute;
     width: 90px;
     height: 90px;
-    top: 481px;
-    left: 96px;
     background: #FFFFFF33
+}
+
+.orderTwo {
+    order: 14
 }
 
 #numer3Box {
-    position: absolute;
     width: 90px;
     height: 90px;
-    top: 481px;
-    left: 189px;
     background: #FFFFFF33
+}
+
+.orderThree {
+    order: 15
 }
 
 #numer4Box {
-    position: absolute;
     width: 90px;
     height: 90px;
-    top: 388px;
-    left: 3px;
     background: #FFFFFF33
+}
+
+.orderFour {
+    order: 9
 }
 
 #numer5Box {
-    position: absolute;
     width: 90px;
     height: 90px;
-    top: 388px;
-    left: 96px;
     background: #FFFFFF33
+}
+
+.orderFive {
+    order: 10
 }
 
 #numer6Box {
-    position: absolute;
     width: 90px;
     height: 90px;
-    top: 388px;
-    left: 189px;
     background: #FFFFFF33
+}
+
+.orderSix {
+    order: 11
 }
 
 #numer7Box {
-    position: absolute;
     width: 90px;
     height: 90px;
-    top: 295px;
-    left: 3px;
     background: #FFFFFF33
+}
+
+.orderSeven {
+    order: 5
 }
 
 #numer8Box {
-    position: absolute;
     width: 90px;
     height: 90px;
-    top: 295px;
-    left: 96px;
     background: #FFFFFF33
+}
+
+.orderEight {
+    order: 6
 }
 
 #numer9Box {
-    position: absolute;
     width: 90px;
     height: 90px;
-    top: 295px;
-    left: 189px;
     background: #FFFFFF33
 }
 
+.orderNine {
+    order: 7
+}
+
+#znakPlusBox {
+    width: 90px;
+    height: 90px;
+    background: #FFFFFF33
+}
+
+.orderPlus {
+    order: 16
+}
+
+.letterznakPlus {
+    width: 26px;
+    height: 26px;
+}
+
+#znakMinusBox {
+    width: 90px;
+    height: 90px;
+    background: #FFFFFF33
+}
+
+.orderMinus {
+    order: 12
+}
+
+.letterznakMinus {
+    width: 26px;
+    height: 2px;
+}
+
+#znakMinusPlusBox {
+    width: 90px;
+    height: 90px;
+    background: #FFFFFF33
+}
+
+.orderPlusMinus {
+    order: 2
+}
+
+.letterznakMinusPlus {
+    width: 38px;
+    height: 28.68px;
+}
+
+#znakProcentBox {
+    width: 90px;
+    height: 90px;
+    background: #FFFFFF33
+}
+
+.orderProcent {
+    order: 3
+}
+
+.letterznakProcent {
+    width: 90px;
+    height: 48px;
+    font-family: Actor
+}
+
+#znakDelenieBox {
+    width: 90px;
+    height: 90px;
+    background: #FFFFFF33
+}
+
+.orderDivide {
+    order: 4
+}
+
+.letterznakDelenie {
+    width: 26px;
+    height: 22px;
+}
+
+.upperСonteinerOfCalculator {
+    display: flex;
+    flex-direction: column-reverse;
+    align-items: flex-end;
+    height: 202px;
+    width: 375px;
+    order: 1
+}
+
 #resultOfCalculator {
-    position: absolute;
+    display: flex;
     width: 251px;
     height: 96px;
     font-size: 80px;
-    top: 88px;
-    left: 106px;
+    margin-right: 12px;
+    margin-bottom: 12px;
     border: none;
     color: #FFFFFF;
     font-family: Actor;
@@ -188,115 +318,4 @@
     letter-spacing: normal;
     text-align: right;
     color: #FFFFFF
-}
-
-#znakZPTBox {
-    position: absolute;
-    width: 90px;
-    height: 90px;
-    top: 574px;
-    left: 189px;
-    background: #FFFFFF33
-}
-
-.letterznakZPT {
-    width: 90px;
-    height: 54px;
-    top: 18px
-}
-
-#znakRavnoBox {
-    position: absolute;
-    width: 90px;
-    height: 90px;
-    top: 574px;
-    left: 282px;
-    background: #FFFFFF33
-}
-
-.letterznakRavno {
-    width: 26px;
-    height: 12px;
-    top: 39px;
-    left: 32px
-}
-
-#znakPlusBox {
-    position: absolute;
-    width: 90px;
-    height: 90px;
-    top: 481px;
-    left: 282px;
-    background: #FFFFFF33
-}
-
-.letterznakPlus {
-    width: 26px;
-    height: 26px;
-    top: 32px;
-    left: 32px
-}
-
-#znakMinusBox {
-    position: absolute;
-    width: 90px;
-    height: 90px;
-    top: 388px;
-    left: 282px;
-    background: #FFFFFF33
-}
-
-.letterznakMinus {
-    width: 26px;
-    height: 2px;
-    top: 44px;
-    left: 32px
-}
-
-#znakMinusPlusBox {
-    position: absolute;
-    width: 90px;
-    height: 90px;
-    top: 202px;
-    left: 96px;
-    background: #FFFFFF33
-}
-
-.letterznakMinusPlus {
-    width: 38px;
-    height: 28.68px;
-    top: 30px;
-    left: 27px
-}
-
-#znakProcentBox {
-    position: absolute;
-    width: 90px;
-    height: 90px;
-    top: 202px;
-    left: 189px;
-    background: #FFFFFF33
-}
-
-.letterznakProcent {
-    width: 90px;
-    height: 48px;
-    top: 21px;
-    font-family: Actor
-}
-
-#znakDelenieBox {
-    position: absolute;
-    width: 90px;
-    height: 90px;
-    top: 202px;
-    left: 282px;
-    background: #FFFFFF33
-}
-
-.letterznakDelenie {
-    width: 26px;
-    height: 22px;
-    top: 34px;
-    left: 32px
 }

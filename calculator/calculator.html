@@ -12,65 +12,72 @@
     <script src="calculator.js"></script>
 </head>
 
-<body>
-    <div class="calculator" onclick='reduceSizeOfCalculator()'>
-        <input onclick="enterButtonZero('numer0Box')" type="button" id="numer0Box" value="0"
-            class="letterOfCalculatorText0 letterBoxText letterBoxCalculator" />
-        <input onclick="enterButtonNumber('numer1Box')" type="button" id="numer1Box" value="1"
-            class="letterOfCalculatorText letterBoxText letterBoxCalculator" />
-        <input onclick="enterButtonNumber('numer2Box')" type="button" id="numer2Box" value="2"
-            class="letterOfCalculatorText letterBoxText letterBoxCalculator" />
-        <input onclick="enterButtonNumber('numer3Box')" type="button" id="numer3Box" value="3"
-            class="letterOfCalculatorText letterBoxText letterBoxCalculator" />
-        <input onclick="enterButtonNumber('numer4Box')" type="button" id="numer4Box" value="4"
-            class="letterOfCalculatorText letterBoxText letterBoxCalculator" />
-        <input onclick="enterButtonNumber('numer5Box')" type="button" id="numer5Box" value="5"
-            class="letterOfCalculatorText letterBoxText letterBoxCalculator" />
-        <input onclick="enterButtonNumber('numer6Box')" type="button" id="numer6Box" value="6"
-            class="letterOfCalculatorText letterBoxText letterBoxCalculator" />
-        <input onclick="enterButtonNumber('numer7Box')" type="button" id="numer7Box" value="7"
-            class="letterOfCalculatorText letterBoxText letterBoxCalculator" />
-        <input onclick="enterButtonNumber('numer8Box')" type="button" id="numer8Box" value="8"
-            class="letterOfCalculatorText letterBoxText letterBoxCalculator" />
-        <input onclick="enterButtonNumber('numer9Box')" type="button" id="numer9Box" value="9"
-            class="letterOfCalculatorText letterBoxText letterBoxCalculator" />
+<body class="mainContainer">
+    <div class="containerOfCalculator" onclick='reduceSizeOfCalculator()'>
+        <div class="mediumConteinerOfCalculator">
+            <div class="orderOne"><input onclick="enterButtonNumber('numer1Box')" type="button" id="numer1Box" value="1"
+                    class="letterOfCalculatorText letterBoxText letterBoxCalculator" /></div>
+            <div class="orderTwo"><input onclick="enterButtonNumber('numer2Box')" type="button" id="numer2Box" value="2"
+                    class="letterOfCalculatorText letterBoxText letterBoxCalculator" /></div>
+            <div class="orderThree"><input onclick="enterButtonNumber('numer3Box')" type="button" id="numer3Box"
+                    value="3" class="letterOfCalculatorText letterBoxText letterBoxCalculator" /></div>
+            <div class="orderFour"> <input onclick="enterButtonNumber('numer4Box')" type="button" id="numer4Box"
+                    value="4" class="letterOfCalculatorText letterBoxText letterBoxCalculator" /></div>
+            <div class="orderFive"><input onclick="enterButtonNumber('numer5Box')" type="button" id="numer5Box"
+                    value="5" class="letterOfCalculatorText letterBoxText letterBoxCalculator" /></div>
+            <div class="orderSix"><input onclick="enterButtonNumber('numer6Box')" type="button" id="numer6Box" value="6"
+                    class="letterOfCalculatorText letterBoxText letterBoxCalculator" /></div>
+            <div class="orderSeven"><input onclick="enterButtonNumber('numer7Box')" type="button" id="numer7Box"
+                    value="7" class="letterOfCalculatorText letterBoxText letterBoxCalculator" /></div>
+            <div class="orderEight"><input onclick="enterButtonNumber('numer8Box')" type="button" id="numer8Box"
+                    value="8" class="letterOfCalculatorText letterBoxText letterBoxCalculator" /></div>
+            <div class="orderNine"><input onclick="enterButtonNumber('numer9Box')" type="button" id="numer9Box"
+                    value="9" class="letterOfCalculatorText letterBoxText letterBoxCalculator" /></div>
+            <div class="orderC" onclick="enterButtonClear()">
+                <input type="button" id="numerCBox" value="C" class="letterOfCalculatorText letterBoxTextC" />
+            </div>
+            <div class="orderMultiply" onclick="enterButtonMultiply()">
+                <input type="button" id="multiplyBox" value="x"
+                    class="letterOfCalculatorText letterMultiply letterBoxCalculator" />
+            </div>
+            <div class="orderPlus" onclick="enterButtonPlus()">
+                <input type="button" id="znakPlusBox" value="&plus;"
+                    class="letterOfCalculatorText letterznakPlus letterBoxCalculator orderPlus" />
+            </div>
+            <div class="orderMinus" onclick="enterButtonMinus()">
+                <input type="button" id="znakMinusBox" value="—"
+                    class="letterOfCalculatorText letterznakMinus letterBoxCalculator" />
+            </div>
+            <div class="orderPlusMinus" onclick="enterButtonPlusMinus()">
+                <input type="button" id="znakMinusPlusBox" value="+/-" class="letterOfCalculatorText" />
+            </div>
+            <div class="orderProcent" onclick="enterButtonProcent()">
+                <input type="button" id="znakProcentBox" value="&percnt;"
+                    class="letterOfCalculatorText letterznakProcent" />
+            </div>
+            <div class="orderDivide" onclick="enterButtonDivide()">
+                <input type="button" id="znakDelenieBox" value="&divide;"
+                    class="letterOfCalculatorText letterznakDelenie letterBoxCalculator" />
+            </div>
+        </div>
+        <div class="upperСonteinerOfCalculator">
+            <div onkeydown="useEnterKey(event)" oninput='reduceSizeOfCalculator()'>
+                <input type="text" id="resultOfCalculator" value="" placeholder="0" autofocus />
+            </div>
+        </div>
+        <div class="lowerСontainerOfCalculator">
+            <div><input onclick="enterButtonZero('numer0Box')" type="button" id="numer0Box" value="0"
+                    class="letterOfCalculatorText0 letterBoxText letterBoxCalculator" /></div>
+            <div onclick="enterButtonComma()">
+                <input type="button" id="znakZPTBox" value=","
+                    class="letterOfCalculatorText letterznakZPT letterBoxCalculator" />
+            </div>
+            <div onclick="getResultOfCalculator()">
+                <input type="button" id="znakRavnoBox" value="&#61;" class="letterOfCalculatorText letterznakRavno" />
+            </div>
+        </div>
 
-        <div onclick="enterButtonClear()">
-            <input type="button" id="numerCBox" value="C" class="letterOfCalculatorText letterBoxTextC" />
-        </div>
-        <div onclick="enterButtonMultiply()">
-            <input type="button" id="multiplyBox" value="x"
-                class="letterOfCalculatorText letterMultiply letterBoxCalculator" />
-        </div>
-        <div onkeydown="useEnterKey(event)" oninput='reduceSizeOfCalculator()'>
-            <input type="text" id="resultOfCalculator" value="" placeholder="0" autofocus />
-        </div>
-        <div onclick="enterButtonComma()">
-            <input type="button" id="znakZPTBox" value=","
-                class="letterOfCalculatorText letterznakZPT letterBoxCalculator" />
-        </div>
-        <div onclick="getResultOfCalculator()">
-            <input type="button" id="znakRavnoBox" value="&#61;" class="letterOfCalculatorText letterznakRavno" />
-        </div>
-        <div onclick="enterButtonPlus()">
-            <input type="button" id="znakPlusBox" value="&plus;"
-                class="letterOfCalculatorText letterznakPlus letterBoxCalculator" />
-        </div>
-        <div onclick="enterButtonMinus()">
-            <input type="button" id="znakMinusBox" value="—"
-                class="letterOfCalculatorText letterznakMinus letterBoxCalculator" />
-        </div>
-        <div onclick="enterButtonPlusMinus()">
-            <input type="button" id="znakMinusPlusBox" value="+/-" class="letterOfCalculatorText" />
-        </div>
-        <div onclick="enterButtonProcent()">
-            <input type="button" id="znakProcentBox" value="&percnt;"
-                class="letterOfCalculatorText letterznakProcent" />
-        </div>
-        <div onclick="enterButtonDivide()">
-            <input type="button" id="znakDelenieBox" value="&divide;"
-                class="letterOfCalculatorText letterznakDelenie letterBoxCalculator" />
-        </div>
+
     </div>
 </body>
 
