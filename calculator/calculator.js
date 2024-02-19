@@ -15,7 +15,7 @@ function enterButtonNumber(buttonId) {
   const btn = document.getElementById(buttonId);
   input.value = String(input.value + btn.value);
 }
-//function to put the comma
+//function to put the 'comma'
 function enterButtonComma() {
   let input = document.querySelector('#resultOfCalculator');
   const btn = document.querySelector('#znakZPTBox');
