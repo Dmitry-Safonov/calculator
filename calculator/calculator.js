@@ -8,6 +8,7 @@ function enterButtonZero(buttonId) {
   else {
     input.value = String(input.value);
   }
+  
 }
 //function to put the numbers from 1 to 9
 function enterButtonNumber(buttonId) {

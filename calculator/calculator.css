@@ -1,8 +1,8 @@
 .mainContainer {
     display: flex;
     justify-content: center
+   
 }
-
 .containerOfCalculator {
     display: flex;
     justify-content: space-evenly;
@@ -14,7 +14,6 @@
     background: linear-gradient(153.43deg, #FFC200 16.67%, #FF9000 53.14%, #FF006A 100%);
     box-shadow: 0px 30px 40px 0px #00000032
 }
-
 .letterOfCalculatorText {
     font-size: 40px;
     font-weight: 400;
@@ -22,10 +21,9 @@
     letter-spacing: 0px;
     text-align: center;
     font-family: Actor;
-    border: none;
+    border: none; 
     color: #FFFFFF
-}
-
+} 
 .letterBoxText {
     width: 90px;
     height: 54px;
@@ -41,35 +39,29 @@
     height: 96px;
     order: 3
 }
-
-#numer0Box {
+ #numer0Box {
     width: 183px;
     height: 90px;
     background: #FFFFFF33
-}
-
+} 
 #znakZPTBox {
     width: 90px;
     height: 90px;
     background: #FFFFFF33
 }
-
 .letterznakZPT {
     width: 90px;
     height: 54px;
 }
-
 #znakRavnoBox {
     width: 90px;
     height: 90px;
     background: #FFFFFF33
 }
-
 .letterznakRavno {
     width: 26px;
     height: 12px;
-}
-
+} 
 .letterOfCalculatorText0 {
     padding-left: 38px;
     font-size: 40px;
@@ -78,7 +70,7 @@
     letter-spacing: 0px;
     text-align: left;
     right: 50px;
-    border: none;
+    border: none; 
     font-family: Actor;
     color: #FFFFFF
 }
@@ -87,204 +79,166 @@
     display: flex;
     height: 375px;
     width: 375px;
-    flex-wrap: wrap;
+  flex-wrap: wrap;
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
     order: 2
 }
-
 #numerCBox {
     width: 90px;
     height: 90px;
     background: #FFFFFF33
 }
-
 .orderC {
     order: 1
 }
-
 #multiplyBox {
     width: 90px;
     height: 90px;
     background: #FFFFFF33
 }
-
 .orderMultiply {
     order: 8
 }
-
 .letterMultiply {
     width: 26px;
     height: 26px;
     range: -45deg
 }
-
 #numer1Box {
     width: 90px;
     height: 90px;
     background: #FFFFFF33
 }
-
 .orderOne {
     order: 13
 }
-
 #numer2Box {
     width: 90px;
     height: 90px;
     background: #FFFFFF33
 }
-
 .orderTwo {
     order: 14
 }
-
 #numer3Box {
     width: 90px;
     height: 90px;
     background: #FFFFFF33
 }
-
 .orderThree {
     order: 15
 }
-
 #numer4Box {
     width: 90px;
     height: 90px;
     background: #FFFFFF33
 }
-
 .orderFour {
     order: 9
 }
-
 #numer5Box {
     width: 90px;
     height: 90px;
     background: #FFFFFF33
 }
-
 .orderFive {
     order: 10
 }
-
 #numer6Box {
     width: 90px;
     height: 90px;
     background: #FFFFFF33
 }
-
 .orderSix {
     order: 11
 }
-
 #numer7Box {
     width: 90px;
     height: 90px;
     background: #FFFFFF33
 }
-
 .orderSeven {
     order: 5
 }
-
 #numer8Box {
     width: 90px;
     height: 90px;
     background: #FFFFFF33
 }
-
 .orderEight {
     order: 6
 }
-
 #numer9Box {
     width: 90px;
     height: 90px;
     background: #FFFFFF33
 }
-
 .orderNine {
     order: 7
 }
-
 #znakPlusBox {
     width: 90px;
     height: 90px;
     background: #FFFFFF33
 }
-
 .orderPlus {
     order: 16
 }
-
 .letterznakPlus {
     width: 26px;
     height: 26px;
 }
-
 #znakMinusBox {
     width: 90px;
     height: 90px;
     background: #FFFFFF33
 }
-
 .orderMinus {
     order: 12
 }
-
 .letterznakMinus {
     width: 26px;
     height: 2px;
 }
-
 #znakMinusPlusBox {
     width: 90px;
     height: 90px;
     background: #FFFFFF33
 }
-
 .orderPlusMinus {
     order: 2
 }
-
 .letterznakMinusPlus {
     width: 38px;
     height: 28.68px;
 }
-
 #znakProcentBox {
     width: 90px;
     height: 90px;
     background: #FFFFFF33
 }
-
 .orderProcent {
     order: 3
 }
-
 .letterznakProcent {
     width: 90px;
     height: 48px;
     font-family: Actor
 }
-
 #znakDelenieBox {
     width: 90px;
     height: 90px;
     background: #FFFFFF33
 }
-
 .orderDivide {
     order: 4
 }
-
 .letterznakDelenie {
     width: 26px;
     height: 22px;
-}
+} 
 
 .upperСonteinerOfCalculator {
     display: flex;
@@ -307,10 +261,10 @@
     font-family: Actor;
     text-align: right;
     background: transparent;
-    outline: none
-}
+    outline: none 
+} 
 
-::placeholder {
+ ::placeholder {
     font-family: Actor;
     font-size: 78px;
     font-weight: 400;
@@ -318,4 +272,7 @@
     letter-spacing: normal;
     text-align: right;
     color: #FFFFFF
-}
+} 
+
+
+
