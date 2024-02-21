@@ -1,9 +1,6 @@
 .mainContainer {
     display: grid;
     justify-items: center;
-    align-items: end;
-    align-content: end;
-    align-self: end;
 }
 
 .containerOfCalculator {
@@ -15,8 +12,6 @@
     justify-content: space-evenly;
     align-content: space-evenly;
     text-align: center;
-    width: 375px;
-    height: 667px;
     background: linear-gradient(153.43deg, #FFC200 16.67%, #FF9000 53.14%, #FF006A 100%);
     box-shadow: 0px 30px 40px 0px #00000032
 }
@@ -46,7 +41,6 @@
     justify-content: space-evenly;
     justify-self: center;
     align-content: space-evenly;
-    gap: normal;
     width: 375px;
     height: 96px;
     order: 3
@@ -102,7 +96,6 @@
     justify-content: space-evenly;
     align-content: space-between;
     justify-self: center;
-    gap: normal;
     width: 375px;
     height: 369px;
     order: 2
@@ -304,7 +297,6 @@
     display: grid;
     grid-template-columns: 375;
     grid-template-rows: 202px;
-    gap: normal;
     justify-items: end;
     align-items: end;
     justify-content: end;
