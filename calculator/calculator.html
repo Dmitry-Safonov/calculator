@@ -12,71 +12,95 @@
     <script src="calculator.js"></script>
 </head>
 
-<body class="mainContainer">
-    <div class="containerOfCalculator" onclick='reduceSizeOfCalculator()'>
-        <div class="mediumConteinerOfCalculator">
-            <div class="orderOne"><input onclick="enterButtonNumber('numer1Box')" type="button" id="numer1Box" value="1"
-                    class="letterOfCalculatorText letterBoxText letterBoxCalculator" /></div>
-            <div class="orderTwo"><input onclick="enterButtonNumber('numer2Box')" type="button" id="numer2Box" value="2"
-                    class="letterOfCalculatorText letterBoxText letterBoxCalculator" /></div>
-            <div class="orderThree"><input onclick="enterButtonNumber('numer3Box')" type="button" id="numer3Box"
-                    value="3" class="letterOfCalculatorText letterBoxText letterBoxCalculator" /></div>
-            <div class="orderFour"> <input onclick="enterButtonNumber('numer4Box')" type="button" id="numer4Box"
-                    value="4" class="letterOfCalculatorText letterBoxText letterBoxCalculator" /></div>
-            <div class="orderFive"><input onclick="enterButtonNumber('numer5Box')" type="button" id="numer5Box"
-                    value="5" class="letterOfCalculatorText letterBoxText letterBoxCalculator" /></div>
-            <div class="orderSix"><input onclick="enterButtonNumber('numer6Box')" type="button" id="numer6Box" value="6"
-                    class="letterOfCalculatorText letterBoxText letterBoxCalculator" /></div>
-            <div class="orderSeven"><input onclick="enterButtonNumber('numer7Box')" type="button" id="numer7Box"
-                    value="7" class="letterOfCalculatorText letterBoxText letterBoxCalculator" /></div>
-            <div class="orderEight"><input onclick="enterButtonNumber('numer8Box')" type="button" id="numer8Box"
-                    value="8" class="letterOfCalculatorText letterBoxText letterBoxCalculator" /></div>
-            <div class="orderNine"><input onclick="enterButtonNumber('numer9Box')" type="button" id="numer9Box"
-                    value="9" class="letterOfCalculatorText letterBoxText letterBoxCalculator" /></div>
-            <div class="orderC" onclick="enterButtonClear()">
-                <input type="button" id="numerCBox" value="C" class="letterOfCalculatorText letterBoxTextC" />
+<body class="main-container">
+    <div class="container-of-calculator" onclick='reduceSizeOfCalculator()'>
+        <div class="container-of-calculator__medium-conteiner-of-calculator ">
+            <div class="container-of-calculator__calculator-button_position-one"><input
+                    onclick="enterButtonNumber('numer1Box')" type="button" id="numer1Box" value="1"
+                    class="container-of-calculator__calculator-button container-of-calculator__calculator-button_size-color" />
             </div>
-            <div class="orderMultiply" onclick="enterButtonMultiply()">
+            <div class="container-of-calculator__calculator-button_position-two"><input
+                    onclick="enterButtonNumber('numer2Box')" type="button" id="numer2Box" value="2"
+                    class="container-of-calculator__calculator-button container-of-calculator__calculator-button_size-color" />
+            </div>
+            <div class="container-of-calculator__calculator-button_position-three"><input
+                    onclick="enterButtonNumber('numer3Box')" type="button" id="numer3Box" value="3"
+                    class="container-of-calculator__calculator-button container-of-calculator__calculator-button_size-color" />
+            </div>
+            <div class="container-of-calculator__calculator-button_position-four"> <input
+                    onclick="enterButtonNumber('numer4Box')" type="button" id="numer4Box" value="4"
+                    class="container-of-calculator__calculator-button container-of-calculator__calculator-button_size-color" />
+            </div>
+            <div class="container-of-calculator__calculator-button_position-five"><input
+                    onclick="enterButtonNumber('numer5Box')" type="button" id="numer5Box" value="5"
+                    class="container-of-calculator__calculator-button container-of-calculator__calculator-button_size-color" />
+            </div>
+            <div class="container-of-calculator__calculator-button_position-six"><input
+                    onclick="enterButtonNumber('numer6Box')" type="button" id="numer6Box" value="6"
+                    class="container-of-calculator__calculator-button container-of-calculator__calculator-button_size-color" />
+            </div>
+            <div class="container-of-calculator__calculator-button_position-seven"><input
+                    onclick="enterButtonNumber('numer7Box')" type="button" id="numer7Box" value="7"
+                    class="container-of-calculator__calculator-button container-of-calculator__calculator-button_size-color" />
+            </div>
+            <div class="container-of-calculator__calculator-button_position-eight"><input
+                    onclick="enterButtonNumber('numer8Box')" type="button" id="numer8Box" value="8"
+                    class="container-of-calculator__calculator-button container-of-calculator__calculator-button_size-color " />
+            </div>
+            <div class="container-of-calculator__calculator-button_position-nine"><input
+                    onclick="enterButtonNumber('numer9Box')" type="button" id="numer9Box" value="9"
+                    class="container-of-calculator__calculator-button container-of-calculator__calculator-button_size-color" />
+            </div>
+            <div class="container-of-calculator__calculator-button_position-clear" onclick="enterButtonClear()">
+                <input type="button" id="numerCBox" value="C"
+                    class="container-of-calculator__calculator-button letterBoxTextC container-of-calculator__calculator-button_size-color" />
+            </div>
+            <div class="container-of-calculator__calculator-button_position-multiply" onclick="enterButtonMultiply()">
                 <input type="button" id="multiplyBox" value="x"
-                    class="letterOfCalculatorText letterMultiply letterBoxCalculator" />
+                    class="container-of-calculator__calculator-button container-of-calculator__calculator-button_size-color" />
             </div>
-            <div class="orderPlus" onclick="enterButtonPlus()">
+            <div class="container-of-calculator__calculator-button_position-plus" onclick="enterButtonPlus()">
                 <input type="button" id="znakPlusBox" value="&plus;"
-                    class="letterOfCalculatorText letterznakPlus letterBoxCalculator orderPlus" />
+                    class="container-of-calculator__calculator-button container-of-calculator__calculator-button_size-color orderPlus" />
             </div>
-            <div class="orderMinus" onclick="enterButtonMinus()">
+            <div class="container-of-calculator__calculator-button_position-minus" onclick="enterButtonMinus()">
                 <input type="button" id="znakMinusBox" value="—"
-                    class="letterOfCalculatorText letterznakMinus letterBoxCalculator" />
+                    class="container-of-calculator__calculator-button container-of-calculator__calculator-button_size-color" />
             </div>
-            <div class="orderPlusMinus" onclick="enterButtonPlusMinus()">
-                <input type="button" id="znakMinusPlusBox" value="+/-" class="letterOfCalculatorText" />
+            <div class="container-of-calculator__calculator-button_position-plus-minus"
+                onclick="enterButtonPlusMinus()">
+                <input type="button" id="znakMinusPlusBox" value="+/-"
+                    class="container-of-calculator__calculator-button container-of-calculator__calculator-button_size-color" />
             </div>
-            <div class="orderProcent" onclick="enterButtonProcent()">
+            <div class="container-of-calculator__calculator-button_position-procent" onclick="enterButtonProcent()">
                 <input type="button" id="znakProcentBox" value="&percnt;"
-                    class="letterOfCalculatorText letterznakProcent" />
+                    class="container-of-calculator__calculator-button container-of-calculator__calculator-button_size-color" />
             </div>
-            <div class="orderDivide" onclick="enterButtonDivide()">
+            <div class="container-of-calculator__calculator-button_position-divide" onclick="enterButtonDivide()">
                 <input type="button" id="znakDelenieBox" value="&divide;"
-                    class="letterOfCalculatorText letterznakDelenie letterBoxCalculator" />
+                    class="container-of-calculator__calculator-button container-of-calculator__calculator-button_size-color" />
             </div>
         </div>
-        <div class="upperСonteinerOfCalculator">
+        <div class="container-of-calculator__upper-conteiner-of-calculator ">
             <div onkeydown="useEnterKey(event)" oninput='reduceSizeOfCalculator()'>
-                <input type="text" id="resultOfCalculator" value="" placeholder="0" autofocus />
+                <input type="text" id="resultOfCalculator"
+                    class="container-of-calculator__upper-conteiner-of-calculator_input-result" value="" placeholder="0"
+                    autofocus />
             </div>
         </div>
-        <div class="lowerСontainerOfCalculator">
+        <div class="container-of-calculator__lower-container-of-calculator">
             <div><input onclick="enterButtonZero('numer0Box')" type="button" id="numer0Box" value="0"
-                    class="letterOfCalculatorText0 letterBoxText letterBoxCalculator" /></div>
+                    class="container-of-calculator__calculator-button-zero container-of-calculator__calculator-button-zero_size-color_value" />
+            </div>
             <div onclick="enterButtonComma()">
                 <input type="button" id="znakZPTBox" value=","
-                    class="letterOfCalculatorText letterznakZPT letterBoxCalculator" />
+                    class="container-of-calculator__calculator-button container-of-calculator__calculator-button_size-color" />
             </div>
             <div onclick="getResultOfCalculator()">
-                <input type="button" id="znakRavnoBox" value="&#61;" class="letterOfCalculatorText letterznakRavno" />
+                <input type="button" id="znakRavnoBox" value="&#61;"
+                    class="container-of-calculator__calculator-button container-of-calculator__calculator-button_size-color" />
             </div>
         </div>
-
 
     </div>
 </body>
