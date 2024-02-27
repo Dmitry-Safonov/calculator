@@ -3,7 +3,7 @@
     justify-content: center
 }
 
-.container-of-calculator {
+.calculator {
     display: flex;
     justify-content: space-evenly;
     flex-direction: column;
@@ -12,10 +12,10 @@
     width: 375px;
     height: 667px;
     background: linear-gradient(153.43deg, #FFC200 16.67%, #FF9000 53.14%, #FF006A 100%);
-    box-shadow: 0px 30px 40px 0px #00000032
+    box-shadow: 0px 30px 40px 0px #00000032;
 }
 
-.container-of-calculator__calculator-button {
+.calculator__button {
     font-size: 40px;
     font-weight: 400;
     line-height: 48px;
@@ -26,13 +26,13 @@
     color: #FFFFFF
 }
 
-.container-of-calculator__calculator-button_size-color {
+.calculator__button_size-color {
     width: 90px;
     height: 90px;
     background: #FFFFFF33
 }
 
-.container-of-calculator__lower-container-of-calculator {
+.calculator__lower-buttons {
     display: flex;
     flex-direction: row;
     flex-wrap: nowrap;
@@ -43,13 +43,13 @@
     order: 3
 }
 
-.container-of-calculator__calculator-button-zero_size-color_value {
+.calculator__button-zero_size-color_value {
     width: 183px;
     height: 90px;
     background: #FFFFFF33
 }
 
-.container-of-calculator__calculator-button-zero {
+.calculator__button-zero {
     padding-left: 38px;
     font-size: 40px;
     font-weight: 400;
@@ -62,7 +62,7 @@
     color: #FFFFFF
 }
 
-.container-of-calculator__medium-conteiner-of-calculator {
+.calculator__medium-buttons {
     display: flex;
     height: 375px;
     width: 375px;
@@ -73,72 +73,72 @@
     order: 2
 }
 
-.container-of-calculator__calculator-button_position-clear {
+.calculator__button_position-clear {
     order: 1
 }
 
 
-.container-of-calculator__calculator-button_position-multiply {
+.calculator__button_position-multiply {
     order: 8
 }
 
-.container-of-calculator__calculator-button_position-one {
+.calculator__button_position-one {
     order: 13
 }
 
-.container-of-calculator__calculator-button_position-two {
+.calculator__button_position-two {
     order: 14
 }
 
-.container-of-calculator__calculator-button_position-three {
+.calculator__button_position-three {
     order: 15
 }
 
-.container-of-calculator__calculator-button_position-four {
+.calculator__button_position-four {
     order: 9
 }
 
-.container-of-calculator__calculator-button_position-five {
+.calculator__button_position-five {
     order: 10
 }
 
-.container-of-calculator__calculator-button_position-six {
+.calculator__button_position-six {
     order: 11
 }
 
-.container-of-calculator__calculator-button_position-seven {
+.calculator__button_position-seven {
     order: 5
 }
 
-.container-of-calculator__calculator-button_position-eight {
+.calculator__button_position-eight {
     order: 6
 }
 
-.container-of-calculator__calculator-button_position-nine {
+.calculator__button_position-nine {
     order: 7
 }
 
-.container-of-calculator__calculator-button_position-plus {
+.calculator__button_position-plus {
     order: 16
 }
 
-.container-of-calculator__calculator-button_position-minus {
+.calculator__button_position-minus {
     order: 12
 }
 
-.container-of-calculator__calculator-button_position-plus-minus {
+.calculator__button_position-plus-minus {
     order: 2
 }
 
-.container-of-calculator__calculator-button_position-procent {
+.calculator__button_position-procent {
     order: 3
 }
 
-.container-of-calculator__calculator-button_position-divide {
+.calculator__button_position-divide {
     order: 4
 }
 
-.container-of-calculator__upper-conteiner-of-calculator {
+.calculator__upper-input {
     display: flex;
     flex-direction: column-reverse;
     align-items: flex-end;
@@ -147,7 +147,7 @@
     order: 1
 }
 
-.container-of-calculator__upper-conteiner-of-calculator_input-result {
+.calculator__upper-input_result {
     width: 251px;
     height: 96px;
     font-size: 80px;
